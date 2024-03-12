@@ -5002,7 +5002,7 @@ try repeat(exp) catch if .=="break" then empty else error
 <pre><code>label $out | ... break $out ...
 </code></pre>
 <p>The <code>break $label_name</code> expression will cause the program to
-to act as though the nearest (to the left) <code>label $label_name</code>
+act as though the nearest (to the left) <code>label $label_name</code>
 produced <code>empty</code>.</p>
 <p>The relationship between the <code>break</code> and corresponding <code>label</code>
 is lexical: the label has to be "visible" from the break.</p>
@@ -6555,7 +6555,7 @@ in <code>.jq</code>.</p>
 <p>Modules imported by a program are searched for in a default search
 path (see below).  The <code>import</code> and <code>include</code> directives allow the
 importer to alter this path.</p>
-<p>Paths in the a search path are subject to various substitutions.</p>
+<p>Paths in the search path are subject to various substitutions.</p>
 <p>For paths starting with "~/", the user's home directory is
 substituted for "~".</p>
 <p>For paths starting with "$ORIGIN/", the directory where the jq
